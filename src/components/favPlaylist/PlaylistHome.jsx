@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, ListMusic, Music4 } from "lucide-react";
+import { ChevronLeft, ChevronRight, ListMusic, Music4, Plus } from "lucide-react";
 import { useAuth } from "../../context/AuthContext.jsx";
 
 const dummyPlaylists = [
@@ -113,13 +113,22 @@ const PlaylistHome = () => {
       <div className="mb-6">
         <h1 className="flex items-center gap-3 text-2xl font-bold text-purple-400">
           <ListMusic className="w-6 h-6 text-purple-300" />
-          My Favorite Playlists (dummy)
+          My Favorite Playlists (Dummy)
         </h1>
         <p className="text-gray-400 text-sm mt-1">
           Welcome <span className="font-semibold text-amber-300">{user?.email}</span> — build your curated playlists for every mood 🎶
         </p>
       </div>
 
+      {/* ✅ Favourite Playlist Empty Folder */}
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold text-white mb-3">Favourite Playlist</h2>
+        <div className="w-full h-32 border-2 border-dashed border-gray-600 rounded-lg flex items-center justify-center text-gray-400">
+          <span className="italic">Empty Folder — No favourite songs marked yet</span>
+        </div>
+      </div>
+
+      {/* Playlist scrollable section (unchanged) */}
       <div className="relative">
         <div
           ref={playlistRef}
@@ -145,6 +154,14 @@ const PlaylistHome = () => {
             <ChevronRight className="w-6 h-6" />
           </button>
         )}
+      </div>
+
+      {/* ✅ Create Personal Playlist Button */}
+      <div className="mt-8 flex justify-center">
+        <button className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg shadow-md transition-all">
+          <Plus className="w-5 h-5" />
+          Create Personal Playlist
+        </button>
       </div>
     </div>
   );

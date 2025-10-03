@@ -205,7 +205,11 @@ VITE_API_BASE_URL=https://gaana-tree-backend.render.com
 * `/podcasts` – Podcast section
 * `/audiobooks` – Audiobook section (`AudiobookHome`)
 * `/subscription` – Explore Subscription Plans (`ExploreSubscription`)
-* `/support` – Support & Help page
+* `/support` – Support & Help page (`Support`)
+* `/song/:id` - for song details (`SongInfo`)
+* `/search` - for search (`Search`)
+* `/profile` - for user profile (`Profile`)
+* `/settings` - for user specific gaana-tree app Settings (`Setting`)
 
 
 ## 💳 Subscription Plans

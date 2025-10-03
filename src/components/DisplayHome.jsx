@@ -276,45 +276,8 @@ const DisplayHome = () => {
             </div>
 
             <div className="mb-4">
-                <h1 className="my-5 font-bold text-2xl text-purple-400">Songs by Singer</h1>
-                {sortedAlbums.length > 0 ? (
-                    <div className="relative">
-                        <div
-                            ref={featuredAlbumsRef}
-                            className="flex overflow-x-auto no-scrollbar scroll-smooth gap-4"
-                        >
-                            {sortedAlbums.map((item, index) => (
-                                <AlbumItem
-                                    key={index}
-                                    name={item.name}
-                                    desc={item.desc}
-                                    id={item._id}
-                                    image={item.imageUrl}
-                                    albumLikes={item.albumLikes}
-                                    subscriptionPlan={item.subscriptionPlan}
-                                />
-                            ))}
-                        </div>
-                        {scrollStates.featuredAlbums.canScrollLeft && (
-                            <button
-                                onClick={() => handleScroll(featuredAlbumsRef, 'left')}
-                                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 p-2 rounded-full text-white hover:bg-opacity-90 transition-all duration-300"
-                            >
-                                <ChevronLeft className="w-6 h-6" />
-                            </button>
-                        )}
-                        {scrollStates.featuredAlbums.canScrollRight && (
-                            <button
-                                onClick={() => handleScroll(featuredAlbumsRef, 'right')}
-                                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 p-2 rounded-full text-white hover:bg-opacity-90 transition-all duration-300"
-                            >
-                                <ChevronRight className="w-6 h-6" />
-                            </button>
-                        )}
-                    </div>
-                ) : (
-                    <p className="text-gray-400 text-sm">No albums available</p>
-                )}
+                <h1 className="my-5 font-bold text-2xl text-purple-400">Songs by Singer (Pending Task)</h1>
+                <p className="text-gray-400 text-sm">This section is reserved for displaying songs by a specific singer. Implementation is pending.</p>
             </div>
         </div>
     );

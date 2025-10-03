@@ -34,7 +34,7 @@ const Navbar = () => {
 
     return (
         <div className="w-full flex justify-between items-center font-semibold">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
                 <div
                     onClick={() => navigate(-1)}
                     className="w-8 h-8 bg-black p-2 rounded-2xl cursor-pointer hover:bg-gray-800 transition-colors flex items-center justify-center"
@@ -47,7 +47,20 @@ const Navbar = () => {
                 >
                     <ChevronRight className="w-4 h-4 text-white" />
                 </div>
+
+                {/* ✅ Beautified Brand Logo & Text */}
+                <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
+                    <img
+                        src="/gaanatree.png"
+                        alt="GaanaTree Logo"
+                        className="w-10 h-10 rounded-full shadow-lg shadow-purple-500/50"
+                    />
+                    <p className="text-3xl font-extrabold bg-gradient-to-r from-purple-400 via-white to-purple-600 bg-clip-text text-transparent animate-pulse drop-shadow-[0_0_10px_rgba(168,85,247,0.8)] transition duration-300">
+                        GaanaTree
+                    </p>
+                </div>
             </div>
+
             <div className="flex items-center gap-4">
                 <p className="bg-white text-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer"
                     onClick={() => navigate("/subscription")}
