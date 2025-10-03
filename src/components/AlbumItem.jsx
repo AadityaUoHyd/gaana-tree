@@ -95,7 +95,7 @@ const AlbumItem = ({ name, image, desc, id, albumLikes = 0, subscriptionPlan }) 
             </div>
             <p className="font-bold mt-3 mb-1 text-white text-base truncate">{name}</p>
             <p className="text-slate-300 text-sm line-clamp-2">{desc}</p>
-            <p className="text-slate-300 text-sm">{subscriptionPlan || "FREE"}</p>
+            <p className="text-amber-300 text-sm">{subscriptionPlan || "FREE"}</p>
             <div className="flex items-center gap-2 mt-2" onClick={e => e.stopPropagation()}>
                 <button
                     className="p-1 -ml-1 focus:outline-none"

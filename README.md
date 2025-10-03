@@ -9,12 +9,11 @@ playlists, comment and a clean responsive UI. This is frontend repository for ga
 - Add Songs to favourite list (create one default favourite folder, can't be deleted). 
   In case user want to create folder and add songs, let him do that.
 - Implements songs by singer
-- Google OAuth2 login
+- Google OAuth2 login, email OTP verification during account creation, forgot/reset password, user profile image
 - Implement Podcast
 - Implement Audiobooks (can use AI to convert readable books)
 - Implement Subscription with payment and expiry
-- Comment section must have pagination
-- Push code to Live (Backend at Render and Frontend at Vercel)
+- Push code to Live (Dockerized Backend at Render and Frontend at Vercel)
 
 ## ✨ Features
 * 🎶 **Songs & Albums** – Browse songs, albums, playlists with track images & metadata.
