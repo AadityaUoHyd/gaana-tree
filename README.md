@@ -243,15 +243,15 @@ VITE_API_BASE_URL=https://gaana-tree-backend.onrender.com
 4. Push to branch: `git push origin feature/new-feature`
 5. Open a Pull Request 
 
-### App will be available at (Not yet deployed in Live Server):
+### App available at :
 In Dev => http://localhost:5173
 Production => https://gaana-tree.vercel.app
 
-### Admin panel will be available at:
+### Admin panel available at:
 In Dev => http://localhost:5174
 Production => https://gaana-tree-admin.vercel.app
 
-### Backend will be available at:
+### Backend available at:
 In Dev => http://localhost:8080
 Production => https://gaana-tree-backend.onrender.com
 
