@@ -195,7 +195,7 @@ VITE_API_BASE_URL=http://localhost:8080
 
 In Production =>
 ```
-VITE_API_BASE_URL=https://gaana-tree-backend.render.com
+VITE_API_BASE_URL=https://gaana-tree-backend.onrender.com
 ```
 
 ## 🧩 Available Pages
@@ -253,7 +253,7 @@ Production => https://gaana-tree-admin.vercel.app
 
 ### Backend will be available at:
 In Dev => http://localhost:8080
-Production => https://gaana-tree-backend.render.com
+Production => https://gaana-tree-backend.onrender.com
 
 ## 📜 License
 This project is licensed under the **MIT License**.
